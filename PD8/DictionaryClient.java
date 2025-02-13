@@ -1,0 +1,53 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class DictionaryClient {
+    public static void main(String[] args) throws Exception {
+        String host = "localhost"; //"localhost" or something like "129.170.212.159"
+        int port = 4242;
+        int connectionDelay = 5000; //in milisecs, 5000 = 5 seconds
+        Scanner console = new Scanner(System.in);
+
+        // Open the socket with the server, and then the writer and reader
+        Socket sock = null;
+        boolean connected = false;
+        System.out.println("connecting...");
+        while (!connected) {
+            try {
+                //try to connect to server, throws error if server not up (which we catch)
+                sock = new Socket(host,port);
+                connected = true;
+            }
+            catch (Exception e) {
+                //server not up, wait connectionDelay/1000 seconds and try again
+                System.out.println("\t server not ready, trying again in " + connectionDelay/1000 + " seconds");
+                Thread.sleep(connectionDelay); //wait
+            }
+        }
+
+        //set up input and output over socket
+        PrintWriter out = new PrintWriter(sock.getOutputStream(), true);
+        BufferedReader in = new BufferedReader(new InputStreamReader(sock.getInputStream()));
+        System.out.println("...connected");
+
+        // Now listen and respond
+        String line;
+        while ((line = in.readLine()) != null) { // Read what server says
+            // Output what you read
+            System.out.println(line);
+            // Get user input from keyboard to write to the open socket (sends to server)
+            String name = console.nextLine(); //If server hangs up, don't know about it until you press enter on keyboard because waits here. "Block" here.
+            out.println(name); // Send what client types to server. Doesn't actually throw exception in client hangs up, just doesn't complete
+        }
+        System.out.println("server hung up");
+
+        // Clean up shop
+        console.close();
+        out.close();
+        in.close();
+        sock.close();
+    }
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ImageAndVideo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PD1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Misc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS1EC" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PD3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PD4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day13" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day14" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day15" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day16" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PD6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day17" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day18" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day19" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day20" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day21" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day22" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day23" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PD8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS6Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Day24" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PracticeFinal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PD6a" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Day12" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

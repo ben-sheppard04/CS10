@@ -1,0 +1,110 @@
+//							if(xCord - 1 >= 0 && yCord - 1 >= 0) {
+//								if (visited.getRGB(xCord - 1, yCord - 1) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord - 1, yCord - 1)))){
+//									if (!pointInList(xCord - 1, yCord - 1, toVisit))
+//										toVisit.add(new Point(xCord - 1, yCord - 1));
+//								}
+//							}
+//							if(xCord - 1 >= 0){
+//								if(visited.getRGB(xCord - 1, yCord) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord - 1, yCord)))) {
+//									if (!pointInList(xCord - 1, yCord, toVisit))
+//										toVisit.add(new Point(xCord - 1, yCord));
+//								}
+//							}
+//							if(yCord - 1 >= 0) {
+//								if (visited.getRGB(xCord, yCord - 1) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord, yCord - 1)))){
+//									if (!pointInList(xCord, yCord - 1, toVisit))
+//										toVisit.add(new Point(xCord, yCord - 1));
+//								}
+//							}
+//							if(xCord - 1 >= 0 && yCord + 1 < image.getHeight()){
+//								if(visited.getRGB(xCord - 1, yCord + 1) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord - 1, yCord + 1)))) {
+//									if (!pointInList(xCord - 1, yCord + 1, toVisit))
+//										toVisit.add(new Point(xCord - 1, yCord + 1));
+//								}
+//							}
+//							if(yCord + 1 < image.getHeight()){
+//								if(visited.getRGB(xCord, yCord + 1) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord, yCord + 1)))) {
+//									if (!pointInList(xCord, yCord + 1, toVisit))
+//										toVisit.add(new Point(xCord, yCord + 1));
+//								}
+//							}
+//							if(xCord + 1 < image.getWidth() && yCord - 1 >= 0){
+//								if(visited.getRGB(xCord + 1, yCord - 1) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord + 1, yCord - 1)))) {
+//									if (!pointInList(xCord + 1, yCord - 1, toVisit))
+//										toVisit.add(new Point(xCord + 1, yCord - 1));
+//								}
+//							}
+//							if(xCord + 1 < image.getWidth()) {
+//								if (visited.getRGB(xCord + 1, yCord) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord + 1, yCord)))){
+//									if (!pointInList(xCord + 1, yCord, toVisit))
+//										toVisit.add(new Point(xCord + 1, yCord));
+//								}
+//							}
+//							if(xCord + 1 < image.getWidth() && yCord + 1 < image.getHeight()) {
+//								if (visited.getRGB(xCord + 1, yCord + 1) == 0 && colorMatch(targetColor, new Color(image.getRGB(xCord + 1, yCord + 1)))){
+//									if (!pointInList(xCord + 1, yCord + 1, toVisit))
+//										toVisit.add(new Point(xCord + 1, yCord + 1));
+//								}
+//							}
+
+		//Check if region is big enough, if it is, add it to regions ArrayList
+//						if(region.size() >= minRegion){
+//							regions.add(region);
+//						}
+
+
+
+
+
+
+
+			//LOOP OVER ALL NEIGHBORS AND ADD THE ONES OF CORRECT COLOR TO THE toVisit only if it has
+			//not been visited and only if it is not already in the ArrayList!!!!!!
+//							int[] deltaX = {-1, -1, -1, 0, 0, 1, 1, 1};
+//							int [] deltaY = {0, 1, -1, -1, 1, 0, 1, -1};
+//							for (int i = 0; i < 8; i++) { // Loop through the visit point's neighbors
+//								int neighborX = (int) currentPoint.getX() + deltaX[i];
+//								int neighborY = (int) currentPoint.getY() + deltaY[i];
+//
+//								// If the "neighbor" fits in the image
+//								if (neighborX >= 0 && neighborX < image.getWidth()
+//										&& neighborY >= 0 && neighborY < image.getHeight()) {
+//									// Then check if the neighbor is un-visited and of the target color
+//									if (visited.getRGB(neighborX, neighborY) == 0
+//											&& colorMatch(new Color(image.getRGB(neighborX, neighborY)), targetColor)) {
+//
+//										// Add neighbor to list of points to check
+//										toVisit.add(new Point(neighborX, neighborY));
+//										visited.setRGB(neighborX, neighborY, 1); // Mark neighbor as visited
+//									}
+//								}
+//							}
+//
+//							region.add(currentPoint); // Add the visit point we checked the neighbors of to the current region
+//
+
+//for (int neighborCol = xCord - 1; neighborCol <= xCord + 1; neighborCol++) {
+//		for (int neighborRow = yCord - 1; neighborRow <= neighborRow + 1; neighborRow++) {
+//		if (neighborCol == xCord || neighborRow == yCord) {
+//		neighborRow++;
+//		}
+//		if (neighborCol >= 0 && neighborCol < image.getWidth() && neighborRow >= 0 && neighborRow < image.getHeight() ) {
+//		if (visited.getRGB(neighborCol, neighborRow) == 0 && colorMatch(targetColor, new Color(image.getRGB(neighborCol, neighborRow)))) {
+//
+//		toVisit.add(new Point(neighborRow, neighborCol));
+//		}
+//		}
+//		}
+//		}
+
+//	for(int ny = Math.max(0, yCord - 1); ny <= Math.min(image.getHeight() - 1, yCord + 1); ny++) {
+//								for(int nx = Math.max(0, xCord - 1); nx <= Math.min(image.getWidth() - 1, xCord + 1); nx++){
+//									System.out.println("test");
+//										if(ny != yCord || nx != xCord){
+//											if ((visited.getRGB(nx, ny) == 0) && colorMatch(targetColor, new Color(image.getRGB(nx, ny)))) {
+//												toVisit.add(new Point(nx, ny));
+//												visited.setRGB(nx, ny, 1);
+//											}
+//										}
+//								}
+//							}
