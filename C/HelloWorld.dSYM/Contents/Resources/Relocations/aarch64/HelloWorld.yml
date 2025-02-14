@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/default/Coding/CS10/C/HelloWorld'
+relocations:     []
+...
